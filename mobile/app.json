@@ -11,7 +11,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#0A0E1A"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.rppauto.mobile"
@@ -22,11 +24,27 @@
         "backgroundColor": "#0A0E1A"
       },
       "package": "com.rppauto.mobile",
-      "permissions": ["CAMERA", "ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION", "INTERNET"]
+      "permissions": [
+        "CAMERA",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "INTERNET"
+      ],
+      "googleServicesFile": "./google-services.json"
     },
     "plugins": [
-      ["expo-camera", {"cameraPermission": "Allow RPP AUTO to access your camera to scan VIN numbers"}],
-      ["expo-location", {"locationAlwaysAndWhenInUsePermission": "Allow RPP AUTO to use your location"}]
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow RPP AUTO to access your camera to scan VIN numbers"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow RPP AUTO to use your location"
+        }
+      ]
     ]
   }
 }
